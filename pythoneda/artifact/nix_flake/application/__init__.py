@@ -1,9 +1,9 @@
 """
-pythoneda/artifact/git/application/__init__.py
+pythoneda/artifact/nix_flake/application/__init__.py
 
-This file ensures pythoneda.artifact.git.application is a namespace.
+This file ensures pythoneda.artifact.nix_flake.application is a namespace.
 
-Copyright (C) 2023-today rydnr's pythoneda-artifact/git-application
+Copyright (C) 2023-today rydnr's pythoneda-artifact/nix-flake-application
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,4 +20,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 __path__ = __import__('pkgutil').extend_path(__path__, __name__)
 
-from .git_artifact_app import GitArtifactApp
+from .nix_flake_artifact_app import NixFlakeArtifactApp

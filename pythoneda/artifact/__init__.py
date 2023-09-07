@@ -3,7 +3,7 @@ pythoneda/artifact/__init__.py
 
 This file ensures pythoneda.artifact is a namespace.
 
-Copyright (C) 2023-today rydnr's pythoneda-artifact/git-application
+Copyright (C) 2023-today rydnr's pythoneda-artifact/nix-flake-application
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -1,2 +1,2 @@
-# git-application
-Application layer for pythoneda-artifact/git
+# nix-flake-application
+Application layer for pythoneda-artifact/nix-flake
