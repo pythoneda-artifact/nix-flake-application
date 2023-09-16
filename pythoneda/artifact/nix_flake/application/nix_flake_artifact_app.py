@@ -44,7 +44,7 @@ class NixFlakeArtifactApp(PythonEDA):
             banner = NixFlakeArtifactBanner()
         except ImportError:
             pass
-        from pythoneda.artifact.nix_flake import NixFlakeArtifact
+        from pythoneda.artifact.nix_flake import NixFlakePackage
         super().__init__(banner, __file__)
 
 if __name__ == "__main__":
