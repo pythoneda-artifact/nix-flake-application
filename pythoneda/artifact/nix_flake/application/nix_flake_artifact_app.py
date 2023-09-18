@@ -47,5 +47,13 @@ class NixFlakeArtifactApp(PythonEDA):
         from pythoneda.artifact.nix_flake import NixFlakePackage
         super().__init__(banner, __file__)
 
+    def accept_github_token(self, token:str):
+        """
+        Specifies the Github token.
+        :param token: Such token.
+        :type token: str
+        """
+        NixFlakeGitRepo.github_token(token)
+
 if __name__ == "__main__":
     asyncio.run(NixFlakeArtifactApp.main("pythoneda.artifact.nix_flake.application.NixFlakeArtifactApp"))
