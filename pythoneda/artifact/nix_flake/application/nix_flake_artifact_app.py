@@ -20,6 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 import asyncio
 from pythoneda.application import PythonEDA
+from pythoneda.artifact.nix_flake.infrastructure import NixFlakeGitRepo
 
 class NixFlakeArtifactApp(PythonEDA):
     """
