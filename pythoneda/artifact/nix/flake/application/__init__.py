@@ -1,8 +1,8 @@
 # vim: set fileencoding=utf-8
 """
-pythoneda/artifact/nix_flake/application/__init__.py
+pythoneda/artifact/nix/flake/application/__init__.py
 
-This file ensures pythoneda.artifact.nix_flake.application is a namespace.
+This file ensures pythoneda.artifact.nix.flake.application is a namespace.
 
 Copyright (C) 2023-today rydnr's pythoneda-artifact/nix-flake-application
 
@@ -19,9 +19,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-__path__ = __import__('pkgutil').extend_path(__path__, __name__)
+__path__ = __import__("pkgutil").extend_path(__path__, __name__)
 
 from .nix_flake_artifact_app import NixFlakeArtifactApp
+
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
 # Local Variables:
 # mode: python
