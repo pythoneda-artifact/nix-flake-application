@@ -20,10 +20,26 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 import asyncio
+from dbus_next import BusType
 from pythoneda.artifact.nix.flake.infrastructure import NixFlakeGitRepo
+from pythoneda.artifact.nix.flake.infrastructure.dbus import NixFlakeDbusSignalListener
 from pythoneda.shared.application import PythonEDA
+from pythoneda.shared.artifact.events.code.infrastructure.dbus import (
+    DbusChangeStagingCodeDescribed,
+    DbusChangeStagingCodeExecutionRequested,
+)
 
 
+@enable(
+    NixFlakeDbusSignalListener,
+    events=[
+        {"event-class": DbusChangeStagingCodeDescribed, "bus-type": BusType.SYSTEM},
+        {
+            "event-class": DbusChangeStagingCodeExecutionRequested,
+            "bus-type": BusType.SYSTEM,
+        },
+    ],
+)
 class NixFlakeArtifactApp(PythonEDA):
     """
     Runs the domain of NixFlake artifacts.
