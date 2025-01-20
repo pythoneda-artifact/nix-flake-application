@@ -78,11 +78,7 @@ class NixFlakeArtifactApp(PythonEDA):
 
 
 if __name__ == "__main__":
-    asyncio.run(
-        NixFlakeArtifactApp.main(
-            "pythoneda.artifact.nix.flake.application.NixFlakeArtifactApp"
-        )
-    )
+    asyncio.run(NixFlakeArtifactApp.main())
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
 # Local Variables:
 # mode: python
